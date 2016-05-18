@@ -9,6 +9,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -57,7 +59,7 @@
         
       </section> <!-- #/app  -->
 
-      <section id="caracteristicas">
+      <section id="caracteristicas" class="grisBG">
          <h1 class="text-center">Características</h1>
          <div class="separador"></div>
 
@@ -115,11 +117,11 @@
                  </div>
                </section>  <!--  /section -->   
 
-               <section class="col-md-4">
+               <section class="col-md-4 text-center">
                  <img src="img/appCentral.png">
                </section>
 
-               <section class="col-md-4">
+               <section class="col-md-4 text-right">
 
                  <div class="caracteristica row">
                     <div class="col-md-4">
@@ -179,7 +181,7 @@
       </section> <!-- #/caracterísicas  -->
 
       <section id=pantallas>
-         <h1>Pantallas</h1>
+         <h1 class="text-center">Pantallas</h1>
          <div class="separador"></div>
          <div class="container">
             <div class="row">
@@ -220,22 +222,26 @@
          <h1 class="text-center">Descargar</h1>
          <div class="separador"></div>
 
-         <div class="container-fluid">
-              <img src="img/descargarApp.png">
-         
-
-             <div class="container">
+         <div class="container-fluid" style="padding: 0; position: relative;">
+            <div class="contenidoDescarga">
+              <div class="phone">
+                 <img src="img/descargarApp.png">
+              </div>
+              <div class="derechaVacio"></div>
+            </div>
+                     
+             <div class="container descarga">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-7">
-                       <h2>Elige tu plataforma favorita</h2>
+                       <h2 class="text-center">Elige tu plataforma favorita</h2>
                        <div class="separador"></div>
 
-                       <section class="descargas text-center">
+                       <section class="plataformas text-center">
                           <div class="col-md-5">
-                             Descar para <span>Apple iOS</span>
+                             Descarga para <span>Apple iOS</span>
                           </div>
-                          <div class="col-md-5"> 
-                             Descar para <span>Android</span>
+                          <div class="col-md-5 col-md-offset-1"> 
+                             Descarga para <span>Android</span>
                           </div>
                        </section>
                     </div>   
@@ -244,7 +250,7 @@
           </div> <!-- /container-fluid -->
       </section> <!-- #/descargar  -->
 
-      <section id="soporte">
+      <section id="soporte" class="azulBG">
 
          <h1 class="text-center">Soporte</h1>
          <div class="separador"></div>
@@ -256,19 +262,19 @@
                 <form class="form-horizontal">
                    <div class="form-group">
                       <div class="col-sm-12">
-                        <input type="text" class="form-control" placeholder="Nombre"> 
+                        <input type="text" class="form-control campos" placeholder="Nombre"> 
                       </div>
                    </div>   
 
                    <div class="form-group">
                       <div class="col-sm-12">
-                        <input type="email" class="form-control" placeholder="Email"> 
+                        <input type="email" class="form-control campos" placeholder="Email"> 
                       </div>
                    </div>  
 
                    <div class="form-group">
                       <div class="col-sm-12">
-                        <textarea placeholder="Nombre" class="form-control ">
+                        <textarea placeholder="Nombre" class="form-control campos">
                           
                         </textarea>  
                       </div>
