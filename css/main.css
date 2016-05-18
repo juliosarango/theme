@@ -32,6 +32,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', end
 
 }
 
+section#principal img {
+	margin: 0 auto;
+}
+
+
 h1, h2 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -81,6 +86,30 @@ h2.parallax {
 	background-color: #123156;
 }
 
+/*menu*/
+.navbar-default {
+	box-shadow: none;
+	background-color: transparent;
+	border: none;
+	background-image: none;
+	min-height: 90px;
+	padding-top: 20px;
+}
+
+.nav > li > a {
+	text-transform: uppercase;
+	font-family: font-family: 'Roboto Condensed', sans-serif;
+	color:#ffffff;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px black;
+	-webkit-text-shadow: 1px 1px 1px black;
+	-moz-text-shadow: 1px 1px 1px black;
+}
+
+.nav >li >a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+
 /*  app */
 
 section#app .social {
@@ -116,6 +145,11 @@ section#caracteristicas .icono {
 	text-align: center;
 
 }
+
+section#caracteristicas img#appCentral{
+	margin: 0 auto;
+}
+
 
 /* PANTALLAS */
 
@@ -248,6 +282,73 @@ input::-moz-placeholder {
 	color: #ffffff !important;
 }
 
+/*media queries*/
+
+
+@media(max-width: 767px){
+	section#principal {
+		height: auto;
+		min-height: initial;
+	}
+	.navbar-default .navbar-collapse {
+		background-color: #123156;
+	}
+
+	section#caracteristicas .caracteristica {
+		min-height: 150px;
+		text-align: center;
+	}
+
+	section#descargar .plataformas > div {
+		margin-bottom: 20px;
+		padding: 21px 0;
+	}
+
+	section#descargar div.phone{
+		height: auto;;
+	}
+	section#descargar div.contenidoDescarga {
+		height: auto;
+	}
+	section#parallax {
+		background-attachment: scroll;
+	}
+}
+
+@media(max-width: 500px){
+	section#descargar div.phone {
+		width: 100%;
+	}
+
+	section#caracteristicas > section.col-xs-6 {
+		width: 100% !important;
+	}
+	section#caracteristicas > .col-xs-6 {
+		width: 100%;
+	}
+
+	section#caracteristicas .caracteristica {
+		min-height: initial;
+		text-align: center;
+	}
+
+	section#caracteristicas .icono {
+		display: none;
+	}
+
+	section#descargar div.derechaVacio {
+		display: none;
+	}
+
+	section#descargar .descarga {
+		position: relative;
+	}
+
+	div.descarga .col-xs-offset-6 {
+		width: 100%;
+		margin: 0;
+	}
+}
 
 
 
